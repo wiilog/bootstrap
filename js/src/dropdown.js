@@ -229,7 +229,6 @@ class Dropdown extends BaseComponent {
   }
 
   dispose() {
-    EventHandler.off(this._element, EVENT_KEY)
     this._menu = null
 
     if (this._popper) {
