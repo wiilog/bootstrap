@@ -72,8 +72,7 @@ class Collapse extends BaseComponent {
     this._isTransitioning = false
     this._config = this._getConfig(config)
     this._triggerArray = SelectorEngine.find(
-      `${SELECTOR_DATA_TOGGLE}[href="#${this._element.id}"],` +
-      `${SELECTOR_DATA_TOGGLE}[data-bs-target="#${this._element.id}"]`
+      `${SELECTOR_DATA_TOGGLE}[href="#${this._element.id}"],${SELECTOR_DATA_TOGGLE}[data-bs-target="#${this._element.id}"]`
     )
 
     const toggleList = SelectorEngine.find(SELECTOR_DATA_TOGGLE)
