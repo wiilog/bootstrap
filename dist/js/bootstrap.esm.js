@@ -193,9 +193,7 @@ const noop = () => function () {};
 const reflow = element => element.offsetHeight;
 
 const getjQuery = () => {
-  const {
-    jQuery
-  } = window;
+  const jQuery = window.jQuery;
 
   if (jQuery && !document.body.hasAttribute('data-bs-no-jquery')) {
     return jQuery;
